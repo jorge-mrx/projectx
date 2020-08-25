@@ -6,7 +6,8 @@
 #
 postgresql: &postgresql
   adapter: postgresql
-  host: localhost
+  encoding: unicode
+  host: ec2-107-22-7-9.compute-1.amazonaws.com
   pool: 5
   timeout: 5000
   database: dvte4j3b3a6h3
@@ -16,15 +17,18 @@ postgresql: &postgresql
 
 development:
   <<: *postgresql
-  database: example_development
+  database: projectx_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *postgresql
-  database: example_test
+  database: projectx_test
 
 production:
   <<: *postgresql
-  database: example_production
+  database: dvte4j3b3a6h3
+  username: jdnianchpmnwah
+  password: f8879232b5a437dd2094b224407b641de8b809116413d821d2b052e2f77a8b7a
+  port: 5432
