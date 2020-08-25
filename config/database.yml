@@ -9,6 +9,10 @@ postgresql: &postgresql
   host: localhost
   pool: 5
   timeout: 5000
+  database: dvte4j3b3a6h3
+  username: jdnianchpmnwah
+  password: f8879232b5a437dd2094b224407b641de8b809116413d821d2b052e2f77a8b7a
+  host: ec2-54-227-243-78.compute-1.amazonaws.com
 
 development:
   <<: *postgresql
